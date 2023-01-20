@@ -5,8 +5,20 @@ function feedInputNumbers(number){
         numArray.push(i);
     }
     console.log(numArray);
-    
+    return changeNumtoWords(numArray);
 }
+
+function changeNumtoWords(numArray){
+    wordArray = [];
+    numArray.forEach(function(element){
+        if (element === "1"){
+            wordArray.push("Beep!")
+        } else (wordArray.push(element))
+        console.log(wordArray);
+    })
+    console.log(wordArray);
+}
+
 
 
 
