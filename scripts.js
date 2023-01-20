@@ -11,10 +11,14 @@ function feedInputNumbers(number){
 function changeNumtoWords(numArray){
     wordArray = [];
     numArray.forEach(function(element){
-        if (element === "1"){
-            wordArray.push("Beep!")
-        } else (wordArray.push(element))
-        console.log(wordArray);
+        if (element.toString().includes("1")){
+            wordArray.push("Beep!");
+        } else if(element.toString().includes("2")){
+            wordArray.push("Boop!");
+        } else if(element.toString().includes("3")){
+            wordArray.push("Won't you be my neighbor?");
+        }  else (wordArray.push(element))
+         console.log(wordArray);           
     })
     console.log(wordArray);
 }
@@ -34,3 +38,5 @@ window.addEventListener("load", function(){
         feedInputNumbers(numberInput.value)
     })
 })
+// else (wordArray.push(element))
+// console.log(wordArray);
