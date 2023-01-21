@@ -4,7 +4,6 @@ function feedInputNumbers(number){
     for(i = 0; i <= number; i++){
         numArray.push(i);
     }
-    console.log(numArray);
     return changeNumtoWords(numArray);
 }
 
@@ -17,8 +16,7 @@ function changeNumtoWords(numArray){
             wordArray.push("Boop!");
         } else if(element.toString().includes("1")){
             wordArray.push("Beep!")
-        }  else (wordArray.push(element))
-         console.log(wordArray);           
+        }  else (wordArray.push(element))        
     })
     return wordArray.join(", ")
 }
